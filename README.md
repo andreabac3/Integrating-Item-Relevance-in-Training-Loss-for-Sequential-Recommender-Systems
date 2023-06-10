@@ -19,12 +19,12 @@ Sequential Recommender Systems (SRSs) are a popular type of recommender system t
 ## Data Preparation
 Put your dataset in the folder data/raw/
 Then you can specify the desired parameters inside the file src/data_creation.py and then you can run it:
-```bash
+```sh
 python3 src/data_creation.py
 ```
 ## Training
 To train the model you can run the following command:
-```bash
+```sh
 python3 src/sasrec_main.py --experiment_id ${experiment_id} --train_num_positives ${train_num_positives} --train_num_negatives ${train_num_positives} --device ${device} --loss_type ${loss_type}
 ```
 To reproduce our experiments use the bash files in the folder scripts.
